@@ -8,31 +8,80 @@ body{
     height: 100%;
     background: whitesmoke;
 }
-.container{
-    width: 50%;
+.container {
+    width: 100%;
     height: 100%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
 }
-img{
-    width: 950px;
+img {
+    width: 100%;
     height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 10px 4px rgb(0,0,0,0.25);
 }
 #title h1, #title p{
     text-align: center;
     margin: 3rem 0 1rem 0;
 }
-#img-description{
-    text-align: right;
-    margin: 0.5rem 0 1rem 0;
-}
-.tribute-info h3{
-    margin: 5rem 0 2rem 0;
+#img-description {
     text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
 }
-ul li{
-    font-size: large;
-    line-height: 1.4;
+.tribute-info h3 {
+    margin: 40px 0 20px;
+    text-align: center;
+    font-size: 25px;
 }
-.famous-qoutes{
-    margin: 3rem;
+ul li {
+    font-size: 18px;
+    line-height: normal;
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+.famous-qoutes {
+    margin: 20px 0;
+    font-size: 17px;
+}
+p#title-description {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+@media only screen and (max-width:1024px){
+    img {
+        height: 400px;
+    }  
+    .tribute-info h3 {
+        margin: 20px 0 10px;
+        font-size: 23px;
+    } 
+    #img-description {
+        text-align: center;
+        margin: 13px 0;
+        font-size: 18px;
+    }
+    #title h1, #title p {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width:1024px){
+.famous-qoutes {
+    margin: 15px 0;
+    font-size: 16px;
+}
+.tribute-info h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+.more-references h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
 }
